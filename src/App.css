@@ -58,7 +58,7 @@
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
   transition: all 0.8s;
-  -webkit-transition: all 0.8s;
+  -webkit-transition: all 0.8s push;
   -moz-transition: all 0.8s;
   -ms-transition: all 0.8s;
   -o-transition: all 0.8s;

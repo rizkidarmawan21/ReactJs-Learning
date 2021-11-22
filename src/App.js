@@ -5,6 +5,7 @@ function App() {
 
 
   return (
+
     <div className="Parentbox">
         <Fotoproduk/>
         <ProdukInfo category="SPORT" title ="SEPATU LARANG" price="100000"/>
@@ -31,9 +32,14 @@ function ProdukInfo({category,title,price}) {
           <p className="Info">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, fugit unde mollitia, molestias vel inventore a nam tempora corrupti dolores nobis obcaecati repudiandae sequi earum cupiditate blanditiis voluptatem alias deserunt totam dolorem sint sit? Cum beatae atque iusto quas? Dolores aspernatur quibusdam fuga laboriosam accusamus eaque harum libero, laudantium deleniti!
           </p>
-          <a href="#" >Add To Cart</a>
+          <a onClick={(e) => TambahCart(title,e)} href="#" >Add To Cart</a>
         </div>
   );
+}
+
+
+function TambahCart(e){
+  console.log("Membeli "+e)
 }
 
 export default App;
