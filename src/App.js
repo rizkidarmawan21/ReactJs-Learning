@@ -31,6 +31,7 @@ function ProdukInfo({category,title,price}) {
           <p className="Info">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, fugit unde mollitia, molestias vel inventore a nam tempora corrupti dolores nobis obcaecati repudiandae sequi earum cupiditate blanditiis voluptatem alias deserunt totam dolorem sint sit? Cum beatae atque iusto quas? Dolores aspernatur quibusdam fuga laboriosam accusamus eaque harum libero, laudantium deleniti!
           </p>
+          <a href="#" >Add To Cart</a>
         </div>
   );
 }
