@@ -9,8 +9,43 @@ function App() {
     <div className="Parentbox">
         <Fotoproduk/>
         <ProdukInfo isDiscount="yes" category="SPORT" title ="SEPATU LARANG" price="100000"/>
-
+        <Review/>
     </div>
+  );
+}
+
+function dataReviews(){
+  const users = [
+    {
+    "id":1,
+    "name": Rizki,
+    "review":"Kualitas bagus "
+    },
+    {
+    "id":2,
+    "name": Darmawan,
+    "review":"Harga murah kualitas bukan kaleng-kaleng"
+    },
+    {
+    "id":3,
+    "name": Arin,
+    "review":"Harga yang terjangkau barang bagus"
+    }
+];
+}
+
+function Review(){
+  return (
+    <div className="Review-box">
+    <h2>Reviews</h2>
+    <div className="Item">
+      <img src="user.jpg" alt="" />
+      <div className="User">
+        <h3>Rizki Darms</h3>
+        <p>Harga murah kualitas bukan kaleng-kaleng</p>
+      </div>
+    </div>
+  </div>
   );
 }
 
