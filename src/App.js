@@ -41,6 +41,10 @@ function CheckDiscount(props){
 }
 
 function ProdukInfo({category,title,price,isDiscount}) {
+  const benefit= ["Tidak kusut terkena air","Bahan mulus","Bahan awet"];
+  const listBenefits = benefit.map((itemBenefits)=>
+    <li>{itemBenefits}</li>
+  );
   return (
         <div className="Deskripsi">
           <p className="Cate">{category}</p>
@@ -50,6 +54,9 @@ function ProdukInfo({category,title,price,isDiscount}) {
           <p className="Info">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, fugit unde mollitia, molestias vel inventore a nam tempora corrupti dolores nobis obcaecati repudiandae sequi earum cupiditate blanditiis voluptatem alias deserunt totam dolorem sint sit? Cum beatae atque iusto quas? Dolores aspernatur quibusdam fuga laboriosam accusamus eaque harum libero, laudantium deleniti!
           </p>
+          <ul >
+            {listBenefits}
+          </ul>
           <a onClick={(e) => TambahCart(title,e)} href="#" >Add To Cart</a>
         </div>
   );
@@ -61,3 +68,4 @@ function TambahCart(e){
 }
 
 export default App;
+
