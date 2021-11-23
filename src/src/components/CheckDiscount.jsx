@@ -1,12 +1,13 @@
 /* eslint-disable eqeqeq */
 import React from "react";
 import '../../App.css';
+import PropTypes from 'prop-types';
 
 function CheckDiscount(props) {
-    const { isDiscount } = props;
+    const { isDiscount,discount } = props;
     if (isDiscount == "yes") {
       return (
-        <p>Diskon 50% Off</p>
+        <p>Diskon {discount}% Off</p>
       );
     } else if (isDiscount == "comming") {
       return (
@@ -19,5 +20,8 @@ function CheckDiscount(props) {
     }
   }
   
-
+  CheckDiscount.propTypes = {
+    discount: PropTypes.number
+  };
+  
   export default CheckDiscount;
