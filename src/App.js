@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
-import { CheckDiscount, Fotoproduk, ProdukInfo, Reviews } from './src/components';
-import PropTypes from 'prop-types';
+import { Fotoproduk, ProdukInfo, Reviews } from './src/components';
 
 function App() {
   return (
